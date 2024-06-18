@@ -1,6 +1,7 @@
 import pygame
 from settings import *
 from sprites import *
+from start_screen import *
 
 if __name__ == "__main__":
     pygame.init()
@@ -11,6 +12,7 @@ if __name__ == "__main__":
     player = Player()
     all_sprites.add(player)
     running = True
+    show_start_screen(screen)
     while running:
         clock.tick(FPS)
         for event in pygame.event.get():
